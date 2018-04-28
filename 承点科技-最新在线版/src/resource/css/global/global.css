@@ -1,0 +1,185 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+  font-size: 10px;
+  font-family: Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+body {
+  font-size: 0;
+  padding: 0;
+}
+.hhly_invite_bg {
+  font-size: 1.4rem;
+}
+.hhly_invite_bd {
+  font-size: 1.4rem;
+}
+.fixed {
+  width: 50px;
+  height: 150px;
+  background-color: #fff;
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  top: 70%;
+}
+.fixed div {
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  text-align: center;
+  border: 1px solid #eaeaea;
+}
+.fixed a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  margin-top: 8px;
+  font-size: 0;
+}
+.fixed i {
+  font-size: 3rem;
+  color: #707070;
+}
+.fixed img {
+  margin-top: 9px;
+}
+.fixed div:hover {
+  background-color: #2660ad;
+}
+.fixed a:hover {
+  font-size: 1.6rem;
+  line-height: 50px;
+  color: #fff;
+  margin-top: 0;
+}
+.fixed a:hover i,
+.fixed a:hover img {
+  display: none;
+}
+.fixed .code img {
+  display: none;
+}
+.fixed .code:hover img {
+  position: absolute;
+  top: -5px;
+  left: -150px;
+  display: block;
+}
+.brand-footer {
+  min-width: 1600px;
+  background-color: #333;
+  height: 157px;
+  width: 100%;
+  border-bottom: 1px solid #3f3f3f;
+}
+.brand-footer p,
+.brand-footer span {
+  font-size: 2.2rem;
+  color: #fff;
+}
+.brand-footer p {
+  padding: 20px 100px 5px;
+  margin: 0;
+}
+.brand-footer span {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 0 100px;
+}
+.brand-footer span:last-child {
+  position: absolute;
+  right: 0;
+}
+@media screen and (max-width: 1366px) {
+  .fixed {
+    width: 37px;
+    height: 111px;
+    z-index: 10;
+    right: 0;
+    top: 70%;
+  }
+  .fixed div {
+    width: 37px;
+    height: 37px;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid #eaeaea;
+  }
+  .fixed a {
+    display: block;
+    width: 37px;
+    height: 37px;
+    text-decoration: none;
+    line-height: 37px;
+    font-size: 0;
+    margin-top: 0;
+  }
+  .fixed i {
+    font-size: 2.2rem;
+    color: #707070;
+  }
+  .fixed img {
+    width: 20px;
+    margin-top: 12px;
+  }
+  .fixed a:hover {
+    font-size: 1.2rem;
+    line-height: 37px;
+    color: #fff;
+    margin-top: 0;
+    background-color: #2660ad;
+  }
+  .fixed a:hover i,
+  .fixed a:hover img {
+    display: none;
+  }
+  .fixed .code img {
+    display: none;
+  }
+  .fixed .code:hover img {
+    left: -120px;
+    width: 108px;
+    height: 108px;
+  }
+  .brand-footer {
+    min-width: 1366px;
+  }
+  .brand-footer p {
+    font-size: 1.8rem;
+    padding: 20px 80px 5px;
+  }
+  .brand-footer span {
+    font-size: 1.8rem;
+    padding: 0 80px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .fixed {
+    display: none;
+  }
+  .brand-footer {
+    min-width: 375px;
+    height: 140px;
+    background-color: #333;
+    border-bottom: 1px solid #3f3f3f;
+    color: #fff;
+  }
+  .brand-footer p {
+    font-size: 1.2rem;
+    padding: 6px 30px;
+    margin: 0;
+  }
+  .brand-footer p:first-child {
+    padding-top: 30px;
+  }
+  .brand-footer span {
+    display: block;
+    padding: 0;
+    margin: 6px 30px;
+    font-size: 1.2rem;
+    left: 0;
+  }
+}

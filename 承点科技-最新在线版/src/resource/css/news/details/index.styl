@@ -1,0 +1,190 @@
+.new-title
+  text-align center
+  margin 90px auto 80px
+  h4
+    font-size 3.2rem
+    color #2660ad
+    text-transform uppercase
+    margin 0 0 20px
+    font-weight normal
+  h3
+    font-size 3.6rem
+    font-weight normal
+    color #2660ad
+    margin 0 auto 20px
+    width 415px
+    padding-bottom 50px
+    border-bottom 1px solid #999
+  a
+    font-size 1.6rem
+    color #666666
+    position relative
+    text-decoration none
+    padding-right 45px
+    &:before
+      content ""
+      position absolute
+      border 7px solid transparent
+      border-left 7px solid #666666
+      top 5px
+      left -15px
+    &:hover
+      color #2660ad
+      &:before
+        border 7px solid transparent
+        border-left 7px solid #2660ad
+  a
+    &:last-child
+      padding-right 0
+.new-body
+  margin 0 auto
+  width 1560px
+  >div
+    &:first-child
+      a
+        margin-right 15px
+        color #666666
+        text-decoration none
+        font-size 2rem
+      span
+        display inline-block
+        font-size 1.2rem
+        text-align center
+        margin-right 15px
+        width 15px
+        height 15px
+        line-height 12px
+        color #666666
+        border 1px solid #666666
+        border-radius 50%
+    &:nth-child(2)
+      margin-bottom 300px
+      h5
+        text-align center
+        font-size 3.2rem
+        margin 80px auto
+      p,a
+        font-size 2.2rem
+        margin 0
+        line-height 50px
+        color #333333
+      img
+        text-align center
+      a
+        text-decoration none
+    &:last-child
+      display flex
+      justify-content space-between
+      a,div
+        display inline-block
+        margin-bottom 50px
+        text-decoration none
+        color #666666
+        font-size 1.8rem
+        &:last-child
+          text-align right
+        &:hover
+          color #2660ad
+@media screen and (max-width: 1366px)
+  .new-title
+    margin 47px auto 70px
+    h4
+      margin 0 0 38px
+    h3
+      font-size 2.8rem
+      padding-bottom 24px
+  .new-body
+    margin 0 auto
+    width 1366px
+    >div
+      margin 0 auto
+      width 1016px
+      &:first-child
+        a
+          font-size 1.4rem
+          margin-right 8px
+        span
+          width 10px
+          height 10px
+          line-height 9px
+          margin-right 8px
+      &:nth-child(2)
+        margin-bottom 140px
+        p, a
+          font-size 1.6rem
+        h5
+          margin 50px auto
+          font-size 2.2rem
+          font-weight normal
+        p
+          line-height 30px
+      &:last-child
+        div
+          margin-bottom 17px
+        a
+          font-size 1.4rem
+@media screen and (max-width: 750px)
+  .new-title
+    width 375px
+    margin 0 auto
+    h4
+      font-size 1.6rem
+      margin-top 30px
+      margin-bottom 10px
+    h3
+      padding-bottom 10px
+      font-size 1.8rem
+      width 262px
+      margin-bottom 7px
+    a
+      font-size 1rem
+      padding-right 33px
+      &:last-child
+        margin-right -13px
+      &:before
+        border 3px solid transparent
+        border-left 3px solid #666
+        left -10px
+        top 3px
+  .new-title
+    a
+      &:hover
+        color #666666
+        &:before
+          border 3px solid transparent
+          border-left 3px solid #666
+          left -10px
+  .new-body
+    margin 0 auto
+    width 375px
+    >div
+      width 280px
+      &:first-child
+        display none
+      &:nth-child(2)
+        margin-bottom 50px
+        h5
+          font-size 1.4rem
+          margin 44px 28px 25px
+        p, a
+          font-size 1rem
+          line-height 22px
+        a
+          &:hover
+            &:before
+              border 3px solid transparent
+              border-left 3px solid #666
+              left -13px
+      &:last-child
+        display block
+        margin-bottom 28px
+        div
+          display block
+          margin-bottom 8px
+          color #333333
+          &:last-child
+            text-align left
+        a
+          margin 0
+          &:last-child
+            text-align left

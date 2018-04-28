@@ -1,0 +1,205 @@
+.v-6-box
+	position absolute
+	top 50%
+	left 100px
+	transform translateY(-50%)
+	z-index 3
+	color #fff
+	text-align left
+	&:before
+		content ''
+		position absolute
+		display block
+		left 0
+		top 150px
+		width 130px
+		border-top 2px solid rgba(38, 96, 173, 0)
+	h3, h4, p
+		position relative
+		color rgba(255, 255, 255, 0)
+	h3
+		font-size 3.2rem
+		line-height 34px
+		font-weight normal
+		margin 0 0 23px 0
+		padding-top 70px
+		top 40px
+	h4
+		font-size 2.4rem
+		line-height 26px
+		font-weight normal
+		margin 0 0 165px 0
+		top 36px
+	p
+		font-size 2.2rem
+		line-height 24px
+		margin 0 0 90px 0
+		top 34px
+		span
+			display inline-block
+			position relative
+			left 66px
+	>span
+		display none
+.v-6-box:hover
+	&:before
+		width 65px
+.v-6-logo
+	font-size 0
+	position relative
+	top 60px
+	opacity 0
+	span
+		display inline-block
+		width 120px
+		height 30px
+		padding-top 135px
+		font-size 2.6rem
+		line-height 30px
+		text-align center
+		&:first-child
+			background url('../../imgs/index/6-1.jpg') top center no-repeat
+			margin-right 100px
+			transition all .5s
+		&:last-child
+			background url('../../imgs/index/6-2.jpg') top center no-repeat
+.v-6-shadow
+	position absolute
+	width 485px
+	height 100%
+	left -485px
+	bottom 0
+	background-color #333
+	z-index 2
+	transition all 0.26s ease .3s
+	transition-duration 1.2s
+	&:after
+		content ''
+		position absolute
+		top 0
+		right -375px
+		width 0
+		height 0
+		border-top 1080px solid #333
+		border-right 375px solid transparent
+		transition all .5s
+.swiper-slide-active
+	.v-6-box
+		&:before
+			border-top 2px solid #2660ad
+			top 114px
+			transition all 0.26s ease .7s
+			transition-duration 1.2s
+		h3, h4, p
+			top 0
+			color #fff
+		h3
+			transition all 0.26s ease .6s
+			transition-duration 1.2s
+		h4
+			transition all 0.26s ease .8s
+			transition-duration 1.2s
+		p
+			transition all 0.26s ease 1s
+			transition-duration 1.2s
+	.v-6-shadow
+		left 0
+	.v-6-logo
+		transition all 0.26s ease 1.2s
+		transition-duration 1.2s
+		top 0
+		opacity 1
+	.anchorBL, .BMap_cpyCtrl
+		display none
+@media screen and (max-width: 1366px)
+	.v-6-shadow
+		width 380px
+		&:after
+			right -280px
+			border-top 1300px solid #333
+	.v-6-box
+		&:before
+			width 104px
+			top 115px
+		h3
+			font-size 2.6rem
+			margin-bottom 10px
+			padding-top 50px
+		h4
+			font-size 1.8rem
+			margin-bottom 90px
+		p
+			font-size 1.6rem
+			margin-bottom 45px
+	.swiper-slide-active
+		.v-6-box
+			&:before
+				top 90px
+	.v-6-logo
+		span
+			font-size 2rem
+			padding-top 120px
+			&:first-child
+				margin-right 70px
+@media screen and (max-width: 750px)
+	.v-6-shadow
+		display none
+	#map
+		width 280px !important
+		height 160px !important
+		position absolute !important
+		border 1px solid #333333
+		left calc(50% - 140px)
+		top calc(50% - 130px)
+	.swiper-slide-active
+		.v-6-box
+			left calc(50% - 140px)
+			width 280px
+			top 54%
+			height 450px
+			&:before
+				top 43px
+				left 107px
+				width 65px
+			h3, h4
+				font-size 1.6rem
+				color #333333
+				margin 0
+				text-align center
+				line-height 16px
+			h3
+				margin-bottom 10px
+				margin-top 20px
+				padding-top 0
+			p
+				display none
+			>span
+				display block
+				color #666666
+				font-size 1.4rem
+				padding-left 40px
+				padding-bottom 20px
+				position relative
+				line-height 18px
+			i
+				color #2660ad
+				position absolute
+				left 0
+				top -2px
+			h4
+				font-size 1.2rem
+				margin-bottom 180px
+			.v-6-logo
+				display flex
+				width 210px
+				margin 0 auto
+				span
+					width 70px
+					background-size 100%
+					color #333333
+					font-size 1.2rem
+					padding-top 65px
+					&:first-child
+						margin-right 55px
+	.anchorBL, .BMap_cpyCtrl
+		display none

@@ -1,0 +1,16 @@
+{
+  "name": "JS_sign",
+  "description": "The Laravel Framework.",
+  "keywords": ["PHP", "sign"],
+  "type": "project",
+  "require": {
+    "php": ">=5.5.9",
+    "catfan/medoo": "*"
+  },
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://packagist.phpcomposer.com"
+    }
+  }
+}

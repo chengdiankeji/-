@@ -1,0 +1,433 @@
+/*样式 start*/
+html,
+body {
+  position: relative;
+  height: 100%;
+  margin:0;
+}
+/*模块1 start*/
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+iframe{
+  display: none;
+}
+.index-module1,.index2-module1{
+  background: url("../imgs/background.jpg") no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.swiper-slide-active .index-module1>div:first-child{
+  width: 73%;
+  height: 40%;
+  background: url("../imgs/index-text-bg.png") no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 8%;
+  left: 13%;
+  opacity: 0;
+  animation:forwards cartoon5 1s 1s;
+}
+.swiper-slide-active .index-module1>div:first-child>img:first-child{
+  width: 62%;
+  position: absolute;
+  top: 16%;
+  left: 20%;
+  animation: forwards cartoon2 1s 1.5s;
+  opacity: 0;
+}
+.swiper-slide-active .index-module1>div:first-child>img:nth-child(2){
+  width: 92%;
+  position: absolute;
+  top: 34%;
+  left: 5%;
+  animation: forwards cartoon3 1.5s 1s;
+  opacity: 0;
+}
+.swiper-slide-active .index-module1>div:last-child>img{
+  position: absolute;
+  -webkit-animation: cartoon1 2s 0s;
+  animation: cartoon1 2s linear;
+}
+.index-module1>div:last-child>img:nth-child(1){
+   width: 10%;
+   top: 17%;
+   left: 5%;
+ }
+.index-module1>div:last-child>img:nth-child(2){
+  width: 13%;
+  top: 2%;
+  right: 8%;
+}
+.index-module1>div:last-child>img:nth-child(3){
+  width: 10%;
+  top: 35%;
+  left: 4%;
+}
+.index-module1>div:last-child>img:nth-child(4){
+  width: 8%;
+  top: 45%;
+  left: 70%;
+}
+/*模块1 end*/
+
+/*模块2 start*/
+.swiper-slide-active .index-module2{
+  color: #fff;
+  width: 78%;
+  height: 12%;
+  position: absolute;
+  top: 49%;
+  left: 11%;
+  opacity: 0;
+  animation: forwards cartoon6 1s 3.5s linear;
+}
+.index-module2>p{
+  margin: 0;
+  border: 1px solid #fff;
+}
+.index-module2>p:first-child{
+  font-size: 20px;
+  color: #f19c43;
+  text-align: center;
+  font-weight: bolder;
+  padding: 5px 0;
+}
+.index-module2>p:last-child{
+  padding: 5px 15px;
+  font-size: 16px;
+  border-top: none;
+}
+/*模块2 end*/
+
+/*模块3 start*/
+.swiper-slide-active .index-module3 img{
+  width: 90%;
+  height:31%;
+  position: absolute;
+  bottom:0;
+  left: 5%;
+  animation: forwards cartoon4 1s 2s linear;
+  opacity: 0;
+}
+/*模块3 end*/
+/*样式 end*/
+
+/*页面2 start*/
+.index1-module1{
+  background: url("../imgs/background.jpg") no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+}
+.index1-module1 div:last-child{
+  margin-top: 20%;
+}
+.index1-module1 h4{
+  font-weight: bolder;
+  font-size: 22px;
+  margin: 0 0 5% 0;
+  text-align: center;
+}
+.index1-module1 p{
+  margin: 0 10%;
+  text-align: justify;
+}
+.swiper-slide-active .index1-module1 div:first-child img:first-child{
+  position: absolute;
+  top:5%;
+  left: 5%;
+  width: 8%;
+  -webkit-animation: cartoon1 2s 0s;
+  animation: cartoon1 2s linear;
+}
+.swiper-slide-active .index1-module1 div:first-child img:last-child{
+  position: absolute;
+  right:5%;
+  bottom: 5%;
+  -webkit-animation: cartoon1 2s 0s;
+  animation: cartoon1 2s linear;
+}
+/*页面2 end*/
+/*页面3 start*/
+.index2-module1{
+  color: #193e5b;
+}
+.swiper-slide-active .index2-module1 div:first-child img:first-child{
+  position: absolute;
+  width: 92%;
+  top:5%;
+  left: 3%;
+  animation: forwards cartoon8 .5s 1s linear;
+  opacity: 0;
+}
+.swiper-slide-active .index2-module1 div:first-child img:last-child{
+  position: absolute;
+  width: 53%;
+  top:16%;
+  left: 17%;
+  animation: forwards cartoon9 .5s 1.5s linear;
+  opacity: 0;
+}
+.index2-module1>div:last-child>img{
+  position: absolute;
+}
+.index2-module1>div:last-child>img:nth-child(1){
+  width: 8%;
+  top: 10%;
+  left: 5%;
+}
+.swiper-slide-active .index2-module1>div:last-child>img:nth-child(2){
+  width: 13%;
+  top: 0;
+  right: 15%;
+  transform:rotate(-50deg);
+  animation: cartoon7 2s linear;
+}
+.swiper-slide-active .index2-module1>div:last-child>img:nth-child(3){
+  width: 10%;
+  top: 53%;
+  animation: cartoon1 2s linear;
+  left: 10%;
+}
+.swiper-slide-active .index2-module1>div:last-child>img:nth-child(4) {
+  width: 12%;
+  top: 50%;
+  animation: cartoon1 2s linear;
+  left: 75%;
+}
+/*页面3 end*/
+/*页面4 start*/
+.index3-module1{
+  background: url("../imgs/background.jpg") no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.index3-module1 div:first-child img:first-child{
+  width: 85%;
+  position: absolute;
+  top:6%;
+  left: 8%;
+}
+.swiper-slide-active .index3-module1 div:first-child img:last-child{
+  width: 63%;
+  position: absolute;
+  top:13%;
+  left: 13%;
+  opacity: 0;
+  animation:forwards cartoon10 1s 1s linear;
+}
+.swiper-slide-active .index3-module1 div:last-child img:first-child{
+  position: absolute;
+  width: 9%;
+  top:7%;
+  left: 2%;
+  animation: cartoon1 2s linear;
+}
+.swiper-slide-active .index3-module1 div:last-child img:last-child{
+  position: absolute;
+  width: 13%;
+  bottom: 3%;
+  right: 0;
+  animation: cartoon1 2s linear;
+}
+.swiper-slide-active .index3-module3 img,.swiper-slide-active .index4-module3 img{
+  width: 80%;
+  height:35%;
+  position: absolute;
+  bottom:0;
+  left: 10%;
+  animation: forwards cartoon4 1s 2s linear;
+  opacity: 0;
+}
+.swiper-slide-active .index4-module3 img{
+  height:30%;
+}
+/*页面4 end*/
+/*页面6 start*/
+.swiper-slide-active .index6-module3 img{
+  width: 80%;
+  height:35%;
+  position: absolute;
+  bottom:0;
+  left: 10%;
+  animation: forwards cartoon4 1s 2s linear;
+  opacity: 0;
+}
+/*页面6 end*/
+/*页面7 start*/
+.index7-module1{
+  background: url("../imgs/login-bg.jpg") no-repeat;
+  position: absolute;
+  background-size: 100% 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+}
+.index7-module1 h4{
+  color: #193e5b;
+  font-size: 20px;
+  position: absolute;
+  top:-30%;
+  left: 20%;
+}
+.index7-module1 div{
+  position: absolute;
+  top: 53%;
+  left: 9%;
+  width: 100%;
+}
+.swiper-slide-active .index7-module1 img{
+  width: 22%;
+  position: absolute;
+  top: 11%;
+  right: 20%;
+  opacity: 0;
+  animation: forwards cartoon11 1s 1s ;
+}
+.index7-module1 input,.index7-module1 button{
+  color: #ccc;
+  font-weight: bolder;
+  display: block;
+  border:none;
+  width: 60%;
+  height: 26px;
+  line-height: 26px;
+  margin: 5px 0;
+  padding-left: 10px;
+  outline: none;
+}
+.index7-module1 button{
+  background-color: #193e5b;
+  color: #fff;
+  padding: 0;
+  width: 62.6%;
+}
+/*页面7 end*/
+/*动画 start*/
+@-webkit-keyframes cartoon1{
+  0%{
+    transform:rotate(0deg);
+  }
+  100%{
+    transform:rotate(-360deg);
+  }
+}
+@-webkit-keyframes cartoon2{
+  0%{
+    left:-80%;
+    opacity: 0;
+  }
+  100%{
+    left: 20%;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes cartoon3{
+  0%{
+    width: 92%;
+    left: 5%;
+    opacity: 0;
+  }
+  50%{
+    width: 100%;
+    left: 1%;
+    opacity: 1;
+  }
+  100%{
+    width: 92%;
+    left: 5%;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes cartoon4{
+  0%{
+    bottom:-35%;
+    opacity: 0;
+  }
+  100%{
+    bottom: 0;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes cartoon5{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@-webkit-keyframes cartoon6{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@-webkit-keyframes cartoon7{
+  0%{
+    transform:rotate(-50deg);
+  }
+  100%{
+    transform:rotate(310deg);
+  }
+}
+@-webkit-keyframes cartoon8 {
+  0%{
+    top: -55%;
+    opacity: 0;
+  }
+  100%{
+    top: 5%;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes cartoon9 {
+  0%{
+    top:-25%;
+    opacity: 0;
+    transform:rotate(0deg);
+  }
+  100%{
+    top: 16%;
+    opacity: 1;
+    transform:rotate(360deg);
+  }
+}
+@-webkit-keyframes cartoon10 {
+  0%{
+    top:-44%;
+    opacity: 0;
+  }
+  100%{
+    top: 13%;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes cartoon11 {
+  0%{
+    right:-22%;
+    opacity: 0;
+  }
+  100%{
+    right: 20%;
+    opacity:1;
+  }
+}
+/* 动画 end*/
+

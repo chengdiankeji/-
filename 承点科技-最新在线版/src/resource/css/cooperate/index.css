@@ -1,0 +1,490 @@
+.banner {
+  width: 100%;
+  min-width: 1600px;
+  height: 550px;
+  background: url("../../imgs/cooperate/banner.jpg") no-repeat center center;
+  background-size: 100% 100%;
+  position: relative;
+  overflow: hidden;
+}
+.banner:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 550px;
+  background-color: rgba(0,0,0,0.3);
+}
+.banner h3,
+.banner p {
+  font-size: 3rem;
+  position: absolute;
+  color: #fff;
+  font-weight: 100;
+  margin: 0;
+  transition: all 0.5s;
+  text-shadow: 0 0 0.3rem #fff;
+  z-index: 1;
+}
+.banner h3 {
+  top: -150px;
+  left: 17%;
+}
+.banner h4 {
+  position: absolute;
+  font-size: 7.2rem;
+  color: #2660ad;
+  margin: 0;
+  top: -500px;
+  left: 56%;
+  transform: rotate(-7deg);
+  font-weight: normal;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.banner h4:after {
+  content: "";
+  position: absolute;
+  width: 86px;
+  height: 34px;
+  top: 175px;
+  left: 95%;
+  transform: rotate(7deg);
+  opacity: 0;
+  transition: all 0.5s 0.5s;
+  background: url("../../imgs/cooperate/logo.png") no-repeat center center;
+}
+.banner p {
+  top: -100px;
+  left: 28%;
+}
+.banner.load h3 {
+  top: 235px;
+}
+.banner.load p {
+  top: 285px;
+}
+.banner.load h4 {
+  top: 255px;
+  opacity: 1;
+}
+.banner.load h4:after {
+  opacity: 1;
+}
+.cooperate-text {
+  margin: 0 auto;
+  width: 1375px;
+  padding-left: 25px;
+  margin-bottom: 175px;
+}
+.cooperate-text div {
+  background: url("../../imgs/cooperate/cooperate.png") no-repeat 100% 55%;
+}
+.cooperate-text h5 {
+  color: #2660ad;
+  font-size: 2.6rem;
+  font-weight: normal;
+  margin-top: 45px;
+  margin-bottom: 32px;
+  position: relative;
+}
+.cooperate-text h5:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -25px;
+  width: 6px;
+  height: 32px;
+  background-color: #2660ad;
+  border-radius: 3px;
+}
+.cooperate-text >h5 {
+  margin-top: 65px;
+}
+.cooperate-text span {
+  color: #333;
+  font-size: 2rem;
+  font-weight: 100;
+}
+.cooperate-text .span-margin {
+  display: inline-block;
+  margin-right: 90px;
+}
+.cooperate-text p {
+  color: #333;
+  font-size: 2rem;
+  font-weight: 100;
+  text-indent: 35px;
+  margin: 0;
+  line-height: 30px;
+}
+.cooperate-text h4 {
+  font-size: 3.6rem;
+  color: #2660ad;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 135px;
+}
+.cooperate-from {
+  width: 1400px;
+  text-align: center;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+}
+.cooperate-from:after {
+  content: "";
+  position: absolute;
+  top: 165px;
+  left: calc(50% - 13px);
+  border: 1px solid #7398ca;
+  height: 235px;
+}
+.cooperate-from div {
+  display: inline-block;
+  width: 50%;
+}
+.cooperate-from input {
+  display: none;
+}
+.cooperate-from label {
+  font-size: 1.8rem;
+  color: #333;
+  position: relative;
+  margin-left: 45px;
+}
+.cooperate-from label:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -25px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #2660ad;
+  border-radius: 4px;
+}
+.cooperate-from label:before {
+  content: "";
+  position: absolute;
+  left: -22px;
+  top: 5px;
+  width: 14px;
+  height: 14px;
+  background-color: #2660ad;
+  display: none;
+}
+.cooperate-from h4 {
+  font-size: 3.2rem;
+  color: #000;
+  font-weight: normal;
+  margin: 0;
+}
+.cooperate-from span {
+  display: inline-block;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #333;
+}
+.cooperate-from div >input {
+  width: 360px;
+  height: 20px;
+  display: block;
+  font-size: 1.8rem;
+  margin: 20px auto;
+  padding: 10px 18px;
+  border: 2px solid #cfcfcf;
+  border-radius: 7px;
+  outline: none;
+  font-weight: 100;
+}
+.cooperate-from div ::-webkit-input-placeholder {
+  color: #999;
+}
+.cooperate-from div >button {
+  width: 400px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #2660ad;
+  border: none;
+  border-radius: 7px;
+  margin-bottom: 160px;
+  outline: none;
+}
+.apply-for h4 {
+  margin-bottom: 130px;
+}
+.apply-for p {
+  font-size: 2rem;
+  color: #333;
+  text-align: left;
+  margin: 50px 0 50px 105px;
+}
+#enterprise:checked + label:before,
+#organization:checked + label:before,
+#individual:checked + label:before {
+  display: block;
+}
+.brand-footer {
+  display: none;
+}
+@media screen and (max-width: 1366px) {
+  .banner {
+    height: 440px;
+    min-width: 1366px;
+  }
+  .banner h3 {
+    font-size: 2.4rem;
+  }
+  .banner p {
+    font-size: 2.4rem;
+  }
+  .banner h4 {
+    font-size: 5.8rem;
+  }
+  .banner h4:after {
+    top: 135px;
+    left: 85%;
+    width: 68px;
+    height: 28px;
+    background-size: 100% 100%;
+  }
+  .banner.load h3 {
+    top: 185px;
+    left: 15%;
+  }
+  .banner.load p {
+    top: 225px;
+    left: 29%;
+  }
+  .banner.load h4 {
+    top: 200px;
+  }
+  .cooperate-text {
+    width: 1016px;
+    padding-left: 20px;
+    margin-bottom: 90px;
+  }
+  .cooperate-text >h5 {
+    margin-top: 60px;
+  }
+  .cooperate-text h5 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  .cooperate-text h5:after {
+    width: 4px;
+    height: 25px;
+    left: -20px;
+  }
+  .cooperate-text p {
+    font-size: 1.6rem;
+    line-height: 22px;
+  }
+  .cooperate-text div {
+    background: url("/static/imgs/cd6fe43a.png") no-repeat 100% 75%;
+  }
+  .cooperate-text div h4 {
+    font-size: 2.6rem;
+    margin: 65px 0 70px;
+  }
+  .cooperate-text span {
+    font-size: 1.6rem;
+  }
+  .cooperate-text .span-margin {
+    margin-right: 50px;
+  }
+  .cooperate-from {
+    width: 1366px;
+  }
+  .cooperate-from:after {
+    left: 50%;
+    top: 135px;
+    height: 200px;
+  }
+  .cooperate-from div {
+    margin: 0 auto;
+    width: 508px;
+  }
+  .cooperate-from div input {
+    width: 314px;
+    height: 16px;
+    font-size: 1.6rem;
+  }
+  .cooperate-from div button {
+    font-size: 1.6rem;
+    width: 354px;
+    height: 36px;
+    line-height: 36px;
+    margin-bottom: 110px;
+  }
+  .cooperate-from h4 {
+    font-size: 2.8rem;
+  }
+  .cooperate-from span {
+    margin-top: 60px;
+    margin-bottom: 0;
+  }
+  .cooperate-from label {
+    margin-left: 30px;
+  }
+  .apply-for {
+    width: 390px;
+  }
+  .apply-for h4 {
+    margin-bottom: 100px;
+  }
+  .apply-for p {
+    font-size: 1.6rem;
+    margin: 45px 0;
+  }
+}
+@media screen and (max-width: 750px) {
+  .banner {
+    width: 100%;
+    min-width: 375px;
+    background-size: 100% 100%;
+    height: 147px;
+  }
+  .banner:after {
+    height: 147px;
+  }
+  .banner h3,
+  .banner p {
+    display: none;
+  }
+  .banner span {
+    display: block;
+    font-size: 1.2rem;
+    width: 165px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    transition: all 0.5s;
+    text-shadow: 0 0 0.3rem #fff;
+    z-index: 1;
+    top: -155px;
+    left: 23px;
+  }
+  .banner h4 {
+    font-size: 1.4rem;
+  }
+  .banner h4:after {
+    width: 44px;
+    top: 40px;
+    left: 55%;
+    height: 15px;
+  }
+  .load.banner span {
+    top: 55px;
+  }
+  .load.banner h4 {
+    top: 70px;
+  }
+  .cooperate-from {
+    width: 300px;
+  }
+  .cooperate-text {
+    width: 280px;
+  }
+  .cooperate-text h5 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+  }
+  .cooperate-text h5:after {
+    height: 16px;
+    width: 3px;
+  }
+  .cooperate-text p {
+    font-size: 1rem;
+    line-height: 18px;
+    text-indent: 24px;
+  }
+  .cooperate-text div {
+    background: none;
+  }
+  .cooperate-text div h4 {
+    font-size: 1.6rem;
+    margin: 50px 0;
+  }
+  .cooperate-text div span {
+    font-size: 1rem;
+  }
+  .cooperate-text div .span-margin {
+    margin-right: 0;
+    display: inline;
+  }
+  .cooperate-from {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .cooperate-from:after {
+    display: none;
+  }
+  .cooperate-from div {
+    display: block;
+  }
+  .cooperate-from div:first-child {
+    width: 210px;
+    height: 255px;
+  }
+  .cooperate-from div:first-child h4 {
+    font-size: 1.6rem;
+  }
+  .cooperate-from div:first-child span {
+    font-size: 1rem;
+    margin-top: 30px;
+  }
+  .cooperate-from div:first-child label {
+    font-size: 1rem;
+    margin-left: 13px;
+  }
+  .cooperate-from div:first-child label:after {
+    width: 10px;
+    height: 10px;
+    top: 0;
+    left: -14px;
+  }
+  .cooperate-from div:first-child label:before {
+    width: 6px;
+    height: 6px;
+    left: -11px;
+    top: 3px;
+  }
+  .cooperate-from div:first-child div {
+    width: 204px;
+  }
+  .cooperate-from div:first-child div input {
+    width: 180px;
+    height: 10px;
+    padding: 5px 10px;
+    margin: 15px 0;
+    font-size: 1rem;
+  }
+  .cooperate-from div:first-child div button {
+    width: 204px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 1rem;
+  }
+  .cooperate-from .apply-for {
+    width: 300px;
+    margin-bottom: 40px;
+  }
+  .cooperate-from .apply-for h4 {
+    font-size: 1.6rem;
+    margin: 40px 0 25px;
+  }
+  .cooperate-from .apply-for p {
+    font-size: 1rem;
+    margin: 15px 0;
+  }
+  .brand-footer {
+    display: block;
+  }
+}

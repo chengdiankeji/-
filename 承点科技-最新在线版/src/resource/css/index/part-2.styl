@@ -1,0 +1,212 @@
+.v-bg-2
+	color #333
+	h3
+		font-size 5rem
+		font-weight normal
+		line-height 50px
+		margin 0 0 60px 0
+		padding-top 40px
+	h4
+		font-size 4rem
+		font-weight normal
+		line-height 40px
+		color #2660ad
+		margin 0 0 120px 0
+	span
+		display block
+		font-size 2rem
+		font-weight normal
+		line-height 20px
+		margin 170px 0 0
+.v-2-box
+	height 245px
+	width 980px
+	text-align justify
+	transition all .5s
+	&:after
+		content ""
+		display inline-block
+		width 100%
+		font-size 0
+		line-height 0
+	h5
+		position absolute
+		bottom 15px
+		width 100%
+		font-size 2rem
+		font-weight normal
+		line-height 26px
+		margin 0
+		text-align center
+		transition .3s
+	p
+		display block
+		position absolute
+		bottom 15px
+		left 0
+		width 155px
+		font-size 1.4rem
+		line-height 18px
+		margin 0
+		padding 0 25px
+		text-indent 28px
+		color rgba(255, 255, 255, 0)
+		overflow hidden
+	a
+		color #333
+.v-2-list
+	display inline-block
+	position relative
+	width 205px
+	height 245px
+	transition all .5s
+	&:before
+		content ''
+		position absolute
+		top 20px
+		left 20px
+		width 164px
+		height 164px
+		border-radius 50%
+		box-sizing border-box
+		border 6px solid #2660ad
+		transition all .5s
+	&:after
+		content ''
+		position absolute
+		font-size 0
+		top 0
+		left 0
+		width 205px
+		height 0
+		background #2660ad
+		border-radius 5px
+		z-index -1
+		transition all .5s
+	.iconfont
+		color #2660ad
+		position absolute
+		top 44%
+		left 50%
+		transform translate(-50%, -50%)
+		font-size 8.2rem
+		transition all .5s
+.v-2-list:hover
+	&:before
+		border 3px solid #2660ad
+	&:after
+		height 245px
+	.iconfont
+		color #fff
+		top 27%
+	h5
+		bottom 100px
+		font-size 1.6rem
+		line-height 20px
+		color #fff
+	p
+		color rgba(255, 255, 255, .8)
+		transition color .3s .2s
+.icon-yingxiaoguanli
+	&:before
+		position relative
+		top -4px
+@media screen and (max-width:1366px)
+	.v-bg-2
+		h3
+			font-size 3.4rem
+			margin-bottom 35px
+			margin-top 100px
+			padding 0
+		h4
+			font-size 2.6rem
+			margin-bottom 53px
+		span
+			margin-top 90px
+			font-size 1.4rem
+		p
+			font-size 1.6rem
+	.v-2-box
+		height 185px
+		width 655px
+		transition all .5s
+	.v-2-list
+		height 185px
+		width 159px
+		&:before
+			width 112px
+			height 112px
+		&:after
+			width 146px
+		.iconfont
+			font-size 5rem
+			top 44%
+			left 48%
+	.v-2-list:hover
+		&:before
+			border 3px solid #2660ad
+		&:after
+			height 176px
+			width 146px
+		.iconfont
+			color #fff
+			top 20%
+		h5
+			bottom 95px
+			font-size 1.6rem
+			line-height 20px
+			color #fff
+		p
+			width 125px
+			height 72px
+			left -5px
+			line-height 15px
+			font-size 1.2rem
+			transform scale(.833)
+			padding 0 15px
+@media screen and (max-width:750px)
+	.swiper-container-v
+		.v-bg-2
+			background #ffffff
+	.v-bg-2
+		h3
+			margin-top 105px
+			font-size 2rem
+			line-height 20px
+			margin-bottom 20px
+		h4
+			font-size 2rem
+			margin-bottom 30px
+	.v-2-box
+		width 320px
+		height 284px
+	.v-2-list
+		height 142px
+		width 155px
+		&:hover
+			p
+				display none
+			&:after
+				display none
+			.iconfont
+				top 42%
+				color #2660ad
+			h5
+				color #333333
+				bottom 10px
+		&:before
+			width 75px
+			height 75px
+			left 42px
+		.iconfont
+			font-size 4rem
+			top 42%
+			left 51%
+		h5
+			font-size 1.6rem
+			bottom 10px
+		p
+			display none
+	.v-bg-2
+		span
+			margin-top 60px

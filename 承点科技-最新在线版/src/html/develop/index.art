@@ -1,0 +1,130 @@
+{{extend '../../resource/layout/layout.art'}}
+{{block 'meta'}}
+<meta name="description" content="承点科技提供专业、稳定的技术服务支持,包含完整的移动安全体系服务,包含IOS应用开发,Android安卓应用开发,HTML5开发,H5页面开发,微信二次开发,App跨平台开发,企业移动平台,移动云平台,让您使用的更放心.">
+{{/block}}
+{{block 'title'}}应用技术开发-技术服务支持-承点科技,提供专业的、稳定的平台技术{{/block}}
+{{block 'content'}}
+<section class="banner" id="banner">
+    <div>
+        <h3>development</h3>
+        <p>咨询式开发理念&nbsp;&nbsp;&nbsp;挖掘产品功能</p>
+        <p>优秀的品质技术保障&nbsp;&nbsp;&nbsp;全面的服务体系升级</p>
+        <span>品质技术保障&nbsp;&nbsp;服务体系升级</span>
+        <span>挖掘产品功能&nbsp;&nbsp;咨询式开发理念</span>
+    </div>
+</section>
+<section class="fixed">
+    <div>
+        <a href="https://www.71chat.com/scsf/core/styleConfig.visitorView.do?cmpcd=142185" target="view_window">
+            <i class="iconfont icon-kefu"></i>
+            咨询
+        </a>
+    </div>
+    <div class="code">
+        <a href="">
+            <i class="iconfont icon-saoyisaoerweimasaomasaomiao"></i>
+            <img src="../../resource/imgs/index/code.png">
+            关注
+        </a>
+    </div>
+    <div>
+        <a href="#banner" class="A-up">
+            <img src="../../resource/imgs/index/index-up.png">
+            返回
+        </a>
+    </div>
+</section>
+<section class="develop-body">
+    <div class="i-text-imgs">
+        <h4>服务简介</h4>
+        <div>
+            <i class="iconfont icon-dingzhikaifa"></i>
+            <p>定制化移动应用开发</p>
+            <span>结合客户设想，运用专业技术手段，帮助客户实现设想；深入研究客户需求，竭力探索产品更多可能性；提供包括产品设计、功能规划、定制化开发、APP推广等一体式服务。</span>
+        </div>
+        <div>
+            <i class="iconfont icon-function"></i>
+            <p>产品功能规划</p>
+            <span>基于数据，结合客户需求，定制专属移动应用；针对开发产品进行技术功能规划，确定移动应用核心功能；梳理产品功能与逻辑，输出产品文档。</span>
+        </div>
+        <div>
+            <i class="iconfont icon-fazhan"></i>
+            <p>产品发展规划</p>
+            <span>帮助APP产品进行全景未来发展规划；制定商业模式规划，运营推广维护，深度了解客户需求，共同探讨产品发展步骤；提供产品市场概述、市场需求等全套产品发展规划报告。</span>
+        </div>
+        <h4>产品简介</h4>
+        <div>
+            <i class="iconfont icon-weixinjiekou"></i>
+            <p>微信二次开发</p>
+            <span>微信接口开发：结合客户需求，进行深度剖析，定制化开发微信产品；使微信公众号与企业系统相连接并提供相应服务。</span>
+        </div>
+        <div>
+            <i class="iconfont icon-APP"></i>
+            <p>IOS/Android应用开发</p>
+            <span>设计和快速构建复杂功能逻辑、安全的加密算法、流畅界面响应、一流用户体验的iOS/Android应用。</span>
+        </div>
+        <div>
+            <i class="iconfont icon-icon-test"></i>
+            <p>H5页面开发</p>
+            <span>响应式、自适应多种屏幕、跨平台，优秀动画和互动方案的HTML5应用。</span>
+        </div>
+    </div>
+    <div class="develop-text">
+        <h4>服务优势</h4>
+        <p>全面的品质服务体系升级</p>
+        <p>提供更细心、更专业、更精湛的技术服务</p>
+        <div>
+            <div>
+                <h5>22<span>个</span></h5>
+                <p>机型适配测试</p>
+            </div>
+            <div>
+                <h5>10<span>种</span></h5>
+                <p>网络环境切换模式</p>
+            </div>
+            <div>
+                <h5>6<span>项</span></h5>
+                <p>手机临界条件</p>
+            </div>
+            <div>
+                <h5>12<span>种</span></h5>
+                <p>手机功能切换</p>
+            </div>
+        </div>
+        <h4>企业优势</h4>
+        <span>与百度达成战略合作共识，为承点科技取得技术上的巨大优势；并配备高效的项目服务团队，6人协同项目小组，对项目对接、界面设计、项目跟进、产品开发、产品测试、产品发布等各个环节进行严格把控，确保项目的快速启动，完美落地。</span>
+    </div>
+    <div class="develop-carousel">
+        <h4>成功案例</h4>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="../../resource/imgs/develop/develop-1.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../../resource/imgs/develop/develop-2.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../../resource/imgs/develop/develop-3.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../../resource/imgs/develop/develop-4.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../../resource/imgs/develop/develop-5.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../../resource/imgs/develop/develop-6.png">
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next swiper-button-black">
+            <i class="iconfont icon-lunbojiantouyou"></i>
+        </div>
+        <div class="swiper-button-prev swiper-button-black">
+            <i class="iconfont icon-lunbojiantouzuo"></i>
+        </div>
+    </div>
+</section>
+<script type="text/javascript" src="https://www.71chat.com/scsf/core/styleConfig.initChat.do?cmpcd=142185"></script>
+{{/block}}

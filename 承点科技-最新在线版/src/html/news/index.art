@@ -1,0 +1,38 @@
+{{extend '../../resource/layout/layout.art'}}
+{{block 'title'}}承点新闻-承点科技-新闻动态{{/block}}
+{{block 'content'}}
+<section class="global-title">
+    <h4>News and information</h4>
+    <h3>新闻资讯</h3>
+</section>
+<section class="global-body">
+    <input type="radio" name="type value="1" id="news" checked>
+    <label for="news">
+        <span class="global-body-span">承点新闻</span>
+    </label>
+    <input type="radio" name="type value="1" id="information">
+    <label for="information">
+        <span class="global-body-span">行业资讯</span>
+    </label>
+    <input type="radio" name="type value="1" id="share" >
+    <label for="share">
+        <span class="global-body-span">干货分享</span>
+    </label>
+    <div class="box" id="box-1">
+        <div id="show_1">分页1</div>
+        <div id="Pagination_1" class="pagination"></div>
+        <div id="result_1" class="result"></div>
+    </div>
+    <div class="box" id="box-2">
+         <div id="show_2">分页2</div>
+         <div id="Pagination_2" class="pagination"></div>
+         <div id="result_2" class="result"></div>
+    </div>
+    <div class="box" id="box-3">
+         <div id="show_3">分页3</div>
+         <div id="Pagination_3" class="pagination"></div>
+         <div id="result_3" class="result"></div>
+    </div>
+</section>
+
+{{/block}}

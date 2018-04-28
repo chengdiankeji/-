@@ -1,0 +1,92 @@
+{{extend '../../resource/layout/layout.art'}}
+{{block 'meta'}}
+<meta name="description" content="承点科技为企业量身打造移动分销商城,集团版微分销系统,渠道版微分销系统,全网版微分销系统,多端同步,轻松实现微分销,三级分销,省时省心,强大的营销推广工具,快速锁定用户粉丝群,让企业快速进入移动分销时代">
+{{/block}}
+{{block 'title'}}品牌营销-承点科技-为企业量身打造专属全网整合营销策划{{/block}}
+{{block 'content'}}
+<section class="banner" id="banner">
+    <img src="../../resource/imgs/brand/brand-logo.png">
+    <div>
+        <h3>Resources</h3>
+        <p>整合全网资源，打造全方位立体式营销</p>
+        <p>帮助企业、品牌、产品通过互联网进行整合营销</p>
+        <span>整合全网资源打造立体式营销</span>
+        <span>企业&nbsp;品牌&nbsp;产品整合打造互联网营销</span>
+    </div>
+</section>
+<section class="fixed">
+    <div>
+        <a href="https://www.71chat.com/scsf/core/styleConfig.visitorView.do?cmpcd=142185" target="view_window">
+            <i class="iconfont icon-kefu"></i>
+            咨询
+        </a>
+    </div>
+    <div class="code">
+        <a href="">
+            <i class="iconfont icon-saoyisaoerweimasaomasaomiao"></i>
+            <img src="../../resource/imgs/index/code.png">
+            关注
+        </a>
+    </div>
+    <div>
+        <a href="#banner" class="A-up">
+            <img src="../../resource/imgs/index/index-up.png">
+            返回
+        </a>
+    </div>
+</section>
+<section class="brand-text">
+    <div>
+        <h4>服务简介</h4>
+        <h5>全网整合营销策划</h5>
+        <p class="text-indent">应用全网资源，建立立体营销；有效的帮助企业、品牌、产品通过信息高速公路进行整合营销，利用品牌符号，把无形的营销网络铺建到社会公众心里；建立品牌基础，提升产品美誉度，提高市场占有率。</p>
+        <h5>新媒体运营</h5>
+        <p class="text-indent">新的运营模式、新的探索、新的发现、新的媒介渠道；颠覆传统理念，营造新媒体社交圈，建立粉丝经济； 结合品牌实际，精准定位，以从无到有，从有到优为目标，充分利用粉丝经济，达到相应的营销目的。 </p>
+        <h5>品牌战略策划</h5>
+        <p class="text-indent">将公司品牌作为核心竞争力，基于公司现状，分析影响品牌的内外部因素、完善品牌决策环节、选择品牌模式、对品牌形象进行设计和策划、将品牌进行延伸规划，最后为品牌发展设立愿景。</p>
+        <h5>品牌诊断报告</h5>
+        <p>针对品牌进行检测及分析，纠正品牌发展误区，重塑品牌发展路径，并提供品牌建设最优解。</p>
+        <h5>品牌口碑管理</h5>
+        <p>基于客户现实情况为基点，深入分析客户需求，帮助企业通过互联网塑造企业知名度，引导正向舆论；打造品牌体系，提升品牌社会认知度。</p>
+    </div>
+    <div>
+        <h4>服务优势</h4>
+        <p class="p-before">拥有多年实战经验的专业营销团队，以数据为基础，结合客户自身现状，量身定制一份高效、优质、多层次、全方位的营销方案。</p>
+    </div>
+    <div>
+        <h4>企业优势</h4>
+        <p class="p-before">达成与百度渠道合作共识，为承点科技取得信息上的优势；</p>
+        <p>达成与腾讯业务合作，为承点取得产品上的优势；</p>
+        <p>达成与阿里巴巴战略合作，为承点取得技术上的优势；</p>
+        <p class="p-margin">然而承点科技自身也在不断的成长，通过多年的积累和沉淀，有足够的信心和实力，为合作伙伴带来优质的服务。</p>
+    </div>
+    <div class="carousel">
+        <h4>成功案例</h4>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="../../resource/imgs/brand/brand-1.jpg">
+                    <p>推广效果</p>
+                    <span>2015年传播受众5000万+</span>
+                    <span>2016年传播受众7000万+</span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="../../resource/imgs/brand/brand-2.jpg">
+                    <p>推广效果</p>
+                    <span>2015年传播受众3.5亿+</span>
+                    <span>2016年传播受众4.8亿+</span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="../../resource/imgs/brand/brand-3.jpg">
+                    <p>推广效果</p>
+                    <span>百度首页首位图文呈现1年+</span>
+                    <span>日均浏览量1000+</span>
+                </div>
+            </div>
+       </div>
+       <div class="swiper-button-next swiper-button-black"></div>
+       <div class="swiper-button-prev swiper-button-black"></div>
+    </div>
+</section>
+<script type="text/javascript" src="https://www.71chat.com/scsf/core/styleConfig.initChat.do?cmpcd=142185"></script>
+{{/block}}

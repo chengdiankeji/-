@@ -1,0 +1,30 @@
+<div class="module5-1 verticalcenter">
+    <h3>革新·致远</h3>
+    <div>
+        <div>
+            <img src="../../resource/imgs/index/5-1.jpg">
+            <h4>承点新闻</h4>
+            <p>即时了解承点 掌握最新动态</p>
+            <span>不虚此行&nbsp;业内精选干货分享</span>
+            <a href="/news#news">了解更多</a>
+        </div>
+        <div>
+            <img src="../../resource/imgs/index/5-2.jpg">
+            <h4>行业资讯</h4>
+            <p>把握第一手资料 引领行业风向</p>
+            <span>把握一手资料&nbsp;引领行业风向</span>
+            <a href="/news#information">了解更多</a>
+        </div>
+        <div>
+            <img src="../../resource/imgs/index/5-3.jpg">
+            <h4>干货分享</h4>
+            <p>不虚此行 干货满满的业内精选</p>
+            <span>不虚此行&nbsp;业内精选干货分享</span>
+            <a href="/news#share">了解更多</a>
+        </div>
+    </div>
+    <a href="/news">
+        MORE
+        <i class="iconfont icon-changjiantou"></i>
+    </a>
+</div>

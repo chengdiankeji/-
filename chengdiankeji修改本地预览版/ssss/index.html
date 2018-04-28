@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no">
+    <title>测测你是《三生三世十里桃花》里的谁</title>
+    <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 0;
+        }
+        body {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        .content, .shade-content {
+            width: 290px;
+            margin: 0 auto;
+        }
+        .content > h1 {
+            font-size: 14px;
+            text-align: center;
+            font-weight: normal;
+            padding: 15px 0 25px;
+        }
+        .content > p {
+            font-size: 12px;
+            padding: 0 10px 35px;
+        }
+        .btn-box > div {
+            font-size: 12px;
+            margin: 0 20px 20px;
+            padding-left: 25px;
+            border: 1px solid #aaaaaa;
+            border-radius: 5px;
+            line-height: 23px;
+        }
+        button {
+            display: block;
+            font-size: 14px;
+            margin: 0 auto;
+            padding: 0 10px;
+            border: none;
+            line-height: 20px;
+            background-color: #878787;
+            border-radius: 3px;
+            color: white;
+        }
+        button.active {
+            background-color: #ff0000;
+        }
+        .shade {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: white;
+            display: none;
+        }
+        .shade-content {
+            border: 1px solid #b8b8b8;
+            margin-top: 15px;
+            position: relative;
+        }
+        .shade-content:before {
+            content: '';
+            position: absolute;
+            width: 82%;
+            height: 108%;
+            top: -4%;
+            left: 9%;
+            background-color: white;
+        }
+        .shade-content:after {
+            content: '';
+            position: absolute;
+            width: 108%;
+            height: 82%;
+            top: 9%;
+            left: -4%;
+            background-color: white;
+            z-index: 1;
+        }
+        .shade-content > h2 {
+            font-size: 12px;
+            text-align: center;
+            padding: 8px 0 10px;
+            margin: 0 30px;
+            border-bottom: 1px solid #d5d5d5;
+            position: relative;
+            z-index: 10;
+        }
+        .shade-content > h2 > span {
+            font-size: 20px;
+            color: #15ad88;
+            padding: 0 15px;
+        }
+        .shade-content > p {
+            font-size: 12px;
+            height: 144px;
+            padding: 20px 15px 10px;
+            line-height: 18px;
+            text-align: justify;
+            position: relative;
+            z-index: 10;
+        }
+        .shade-content > div {
+            padding: 0 15px 15px;
+            text-align: right;
+            position: relative;
+            z-index: 10;
+        }
+        .shade-content > div > p {
+            font-size: 12px;
+            position: absolute;
+            right: 95px;
+            bottom: 20px;
+        }
+        .shade-content > div > img {
+            width: auto;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <img src="images/banner.jpg" alt="三生三世十里桃花">
+    <div class="content">
+        <h1>测测你是《三生三世十里桃花》里的谁</h1>
+        <p class="question">1/来到一个新的城市，你总是能够第一时间找到方向吗？</p>
+        <div class="btn-box">
+            <div class="btn btn-one">是</div>
+            <div class="btn btn-two">不是</div>
+        </div>
+        <button disabled="disabled" class="find-result">查看结果</button>
+    </div>
+    <div class="shade">
+        <img src="images/白浅.jpg" alt="白浅" class="result-image">
+        <div class="shade-content">
+            <h2>我的结果<span class="result-title">白浅</span></h2>
+            <p class="result-content">为人和善，总是一副与世无争的模样。你讨厌表面化及肤浅的东西；你宁愿独自一人也不愿跟别人闲谈，但你跟朋友的关系却非常深入，这令你的心境保持和谐安逸。你不介意长时间独自一人而且绝少会觉得沉闷。但关键时刻总是霸气侧露淡然的性格里透着一份直爽，虽然不能万事考虑周全，但对于自己及四周的环境能够比一般人控制得更好更彻底。</p>
+            <div>
+                <p>扫描二维码<br>我也测一测</p>
+                <img src="images/QR-CODE.jpg" alt="QR-CODE">
+            </div>
+        </div>
+    </div>
+    <script>
+        var questionArray = [
+            ['1/来到一个新的城市，你总是能够第一时间找到方向吗？', '是', '不是'],
+            ['2/当朋友再次提起你曾打破TA最心爱的杯子，你会？', '依然会心怀愧疚', '半开玩笑的道歉'],
+            ['3/对待感情，你属于一见钟情型还是日久生情型？', '一见钟情型', '日久生情型'],
+            ['4/朋友过生日你会送什么礼物给TA？', '贵重的礼物', '实用的礼物'],
+            ['5/你是一个脸盲症患者吗？', '是', '不是'],
+            ['6/再次见到曾经得罪过你的人你会？', '忍不住生气的挖苦一番', '愤怒的视而不见', '还有心结但仍然原谅'],
+            ['7/当你发现与别人撞衫时，你会？', '反正没有我好看', '不舒服以后尽量避免', '无所谓'],
+            ['8/你认为自己是一个会轻易表露心迹的人吗？', '是的', '不是'],
+            ['9/你现在觉得，平平淡淡地生活着，才是王道？', '是的', '不是', '有时候觉得'],
+            ['10/在异国商场不小心弄脏出售的衣物并被店员发现，你会？', '郑重地向对方道歉', '装作不懂外语迅速逃离'],
+            ['11/你认为缘分这种东西自己一向把握不住？', '是的', '不是'],
+            ['12/当你发现恋人出轨你会？', '当面揭穿', '默默分手'],
+            ['13/朋友几次邀请你参加并不想去的聚会，你会？', '找借口推掉' ,'不好拒绝还是去了'],
+            ['14/喜欢从事领导类型的工作？', '是', '不是']
+        ],
+            resultArray = [
+                ['白浅', '为人和善，总是一副与世无争的模样。你讨厌表面化及肤浅的东西；你宁愿独自一人也不愿跟别人闲谈，但你跟朋友的关系却非常深入，这令你的心境保持和谐安逸。你不介意长时间独自一人而且绝少会觉得沉闷。但关键时刻总是霸气侧露淡然的性格里透着一份直爽，虽然不能万事考虑周全，但对于自己及四周的环境能够比一般人控制得更好更彻底。'],
+                ['夜华', '深沉稳重的你，能够掌管自己的生活，你相信自己的能力多于相信命运的安排。你以实际、简单的方式去解决问题。有人会觉得你高冷，其实你只是不易表达心里的想法，你对日常生活中所遇到的事物抱有现实的看法，并且能够应付自如。对待感情十分专一，周围的人也对你信任有加，有责任心，意志坚定。'],
+                ['折颜', '你喜欢自由自在，无拘无束的生活，有情趣、有品味。你好奇心旺盛，对新事物抱有开放的态度；你向往改变，讨厌束缚。你觉得身边的环境都不断在变，而且经常为你带来惊喜。'],
+                ['阿离', '你不介意冒险，特别喜欢有趣的，多元化的工作。相比之下，例行公事及惯例会令你没精打采。看透很多事，却喜欢装傻。其实你很简单也很聪明，很吵闹也很安静，对朋友很讲义气，很照顾朋友。这样的你值得深交。']
+            ],
+            index = 0,
+            type = '';
+
+        $('.btn-box').on('click', '.btn', function(){
+
+            for(var i in questionArray){
+                if(questionArray[i][0] == $('.question').html()) {
+                    index = i;
+                }
+            }
+
+            switch (parseInt(index)) {
+                case 0:
+                    if (this.className == 'btn btn-one') {
+                        setContent(1);
+                    } else {
+                        setContent(2);
+                    }
+                    break;
+                case 1:
+                    if (this.className == 'btn btn-one') {
+                        setContent(3);
+                    } else {
+                        setContent(4);
+                    }
+                    break;
+                case 2:
+                    if (this.className == 'btn btn-one') {
+                        setContent(4);
+                    } else {
+                        setContent(3);
+                    }
+                    break;
+                case 3:
+                    if (this.className == 'btn btn-one') {
+                        setContent(5);
+                    } else {
+                        setContent(6);
+                    }
+                    break;
+                case 4:
+                    if (this.className == 'btn btn-one') {
+                        setContent(5);
+                    } else {
+                        setContent(6);
+                    }
+                    break;
+                case 5:
+                    if (this.className == 'btn btn-one') {
+                        setContent(6);
+                    } else if (this.className == 'btn btn-two'){
+                        setContent(7);
+                    } else {
+                        setContent(8);
+                    }
+                    break;
+                case 6:
+                    if (this.className == 'btn btn-one') {
+                        setContent(9);
+                    } else if (this.className == 'btn btn-two'){
+                        setContent(8);
+                    } else {
+                        setContent(7);
+                    }
+                    break;
+                case 7:
+                    if (this.className == 'btn btn-one') {
+                        setContent(9);
+                    } else {
+                        setContent(8);
+                    }
+                    break;
+                case 8:
+                    if (this.className == 'btn btn-one') {
+                        setContent(9);
+                    } else if (this.className == 'btn btn-two'){
+                        setContent(10);
+                    } else {
+                        setContent(11);
+                    }
+                    break;
+                case 9:
+                    if (this.className == 'btn btn-one') {
+                        setContent(10);
+                    } else {
+                        setContent(11);
+                    }
+                    break;
+                case 10:
+                    if (this.className == 'btn btn-one') {
+                        setContent(11);
+                    } else {
+                        setContent(12);
+                    }
+                    break;
+                case 11:
+                    if (this.className == 'btn btn-one') {
+                        setContent(12);
+                    } else {
+                        type = 'A';
+                        clearBind();
+                    }
+                    break;
+                case 12:
+                    if (this.className == 'btn btn-one') {
+                        type = 'C';
+                        clearBind();
+                    } else {
+                        setContent(13);
+                    }
+                    break;
+                case 13:
+                    if (this.className == 'btn btn-one') {
+                        type = 'B';
+                        clearBind();
+                    } else {
+                        type = 'D';
+                        clearBind();
+                    }
+                    break;
+            }
+        });
+
+        $('.content').on('click', '.find-result', function(){
+            switch (type) {
+                case 'A':
+                    setResult(0);
+                    break;
+                case 'B':
+                    setResult(1);
+                    break;
+                case 'C':
+                    setResult(2);
+                    break;
+                case 'D':
+                    setResult(3);
+                    break;
+            }
+
+            $('.shade').unbind().css('display', 'block');
+        });
+
+        function setContent(i) {
+            $('.question').html(questionArray[i][0]);
+            var html = '';
+            html += "<div class='btn btn-one'>"+questionArray[i][1]+"</div>";
+            html += "<div class='btn btn-two'>"+questionArray[i][2]+"</div>";
+
+            if (questionArray[i].length == 4) {
+                html += "<div class='btn btn-three'>"+questionArray[i][3]+"</div>";
+            }
+
+            $('.btn-box').html(html);
+        }
+
+        function clearBind() {
+            $('.find-result').unbind().addClass('active').removeAttr('disabled');
+            $('.btn-box').unbind();
+        }
+
+        function setResult(i) {
+            $('.result-image').attr('src', 'images/'+resultArray[i][0]+'.jpg').attr('alt', resultArray[i][0]);
+            $('.result-title').html(resultArray[i][0]);
+            $('.result-content').html(resultArray[i][1]);
+        }
+    </script>
+</body>
+</html>

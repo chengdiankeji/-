@@ -1,0 +1,65 @@
+{{extend '../../resource/layout/layout.art'}}
+{{block 'meta'}}
+<meta name="description" content="承点科技,为您打造专属的定制化管理运营平台,融合线上线下优势,集合多种管理功能模块,让企业顺利实现电商化的目标,帮助企业轻松管理企业相关业务,顺利实现移动互联网转型">
+{{/block}}
+{{block 'title'}}运营平台-承点科技-定制化运营管理{{/block}}
+{{block 'content'}}
+<section class="banner" id="banner">
+    <div>
+        <h3>一站式网店代运营服务</h3>
+        <h3>专注品牌孵化</h3>
+        <p>One-stop shop for business services</p>
+        <p>to focus on brand hatching</p>
+        <span>One-stop operation</span>
+        <span>Focus on brand hatching</span>
+    </div>
+</section>
+<section class="fixed">
+    <div>
+        <a href="https://www.71chat.com/scsf/core/styleConfig.visitorView.do?cmpcd=142185" target="view_window">
+            <i class="iconfont icon-kefu"></i>
+            咨询
+        </a>
+    </div>
+    <div class="code">
+        <a href="">
+            <i class="iconfont icon-saoyisaoerweimasaomasaomiao"></i>
+            <img src="../../resource/imgs/index/code.png">
+            关注
+        </a>
+    </div>
+    <div>
+        <a href="#banner" class="A-up">
+            <img src="../../resource/imgs/index/index-up.png">
+            返回
+        </a>
+    </div>
+</section>
+<section class="serve-text-img" id="server-text-img">
+
+</section>
+
+<section class="serve-text">
+    <h4>运营优势</h4>
+    <span>Operate Advantage</span>
+    <p>多年专注电子商务，实战运营经验丰富，积累了丰富的平台运作经验和电商营销策略，从平台搭建到战略制定，一路为你保驾护航。</p>
+    <h4>公司优势</h4>
+    <span>Company Advantage</span>
+    <p>阿里平台长期战略合作伙伴，淘宝，天猫，速卖通，淘宝特卖等资源对接，百度 360 等各大搜索平台资源优先供给，大V公众号 微博 软文营销资源丰富。</p>
+    <h4>案例展示</h4>
+    <span>Case Exhibition</span>
+</section>
+<section class="serve-carousel">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="../../resource/imgs/serve/serve-1.jpg">
+            </div>
+            <div class="swiper-slide">
+                <img src="../../resource/imgs/serve/serve-2.jpg">
+            </div>
+        </div>
+      </div>
+</section>
+<script type="text/javascript" src="https://www.71chat.com/scsf/core/styleConfig.initChat.do?cmpcd=142185"></script>
+{{/block}}

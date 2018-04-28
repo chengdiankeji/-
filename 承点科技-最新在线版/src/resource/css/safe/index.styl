@@ -1,0 +1,260 @@
+.banner
+  background url("../../imgs/safe/banner.jpg") no-repeat center center
+  background-size 100% 100%
+  width 100%
+  min-width 1600px
+  height 750px
+  overflow hidden
+  div.text
+    width 530px
+    height 355px
+    margin 0 auto
+    position relative
+    top 184px
+    left -230px
+    overflow hidden
+    &:after
+      content ""
+      position absolute
+      top 226px
+      right 0
+      width 0
+      height 6px
+      background-color #fcc700
+      transition all .5s 1s
+  h3
+    font-size 5rem
+    font-weight normal
+    color #ffffff
+    margin 0
+    position absolute
+    top -500px
+    transition all .6s
+    &:first-child
+      margin 0 0 40px
+      transition all .5s
+  p
+    color #02cfc5
+    width 500px
+    font-size 2.8rem
+    text-transform uppercase
+    text-align right
+    margin 0
+    position absolute
+    right 1500px
+    top 285px
+    transition all .5s .5s
+    &:last-child
+      margin 0
+  div.img
+    img
+      position relative
+      &:last-child
+        top -320px
+        right -49%
+        animation start 3s linear infinite
+      &:first-child
+        top -270px
+        right -72%
+        animation start 2s linear infinite
+.banner.load
+  div
+    &:after
+      width 100px
+  h3
+    top 90px
+    &:first-child
+      top 0
+  p
+    right 0
+    top 285px
+    &:last-child
+      top 325px
+.safe-body
+  width 1400px
+  margin 0 auto
+  h3, h4
+    color #2660ad
+    text-align center
+    font-weight normal
+    font-size 4.8rem
+  h3
+    text-transform uppercase
+    margin 120px 0 0
+    padding-bottom 30px
+    position relative
+    &:after
+      content ""
+      width 800px
+      height 2px
+      background-color #999999
+      position absolute
+      bottom 0
+      left calc(50% - 400px)
+  h4
+    font-size 3.6rem
+    margin 20px 0 70px
+  p
+    font-size 2.8rem
+    color #2660ad
+    margin 70px 0 40px
+  span
+    font-size 2rem
+    color #333333
+    display inline-block
+    line-height 30px
+.swiper-container
+  width 1400px
+  height 580px
+  margin-left auto
+  margin-right auto
+.swiper-wrapper
+  height 580px
+.swiper-slide
+  text-align center
+  font-size 18px
+  width 286px
+  background #fff
+  height 200px
+  img
+    width 200px
+    height 75px
+.brand-footer
+  display block
+@keyframes start
+  0%
+    opacity 0
+  50%
+    opacity 1
+  100%
+    opacity 0
+@media screen and (max-width: 1366px)
+  .banner
+    min-width 1366px
+    height 540px
+    div.text
+      width 385px
+      top 140px
+      left -115px
+      &:after
+        height 4px
+        top 160px
+      h3
+        font-size 3.6rem
+        &:first-child
+          margin 0 0 30px
+      p
+        font-size 2rem
+    div.img
+      img
+        &:first-child
+          top -300px
+          width 315px
+          right -72%
+        &:last-child
+          top -335px
+          width 350px
+          right -48%
+  .banner.load
+    .text
+      &:after
+        width 60px
+    h3
+      top 70px
+    p
+      top 205px
+      &:last-child
+        top 240px
+  .safe-body
+    width 1016px
+    h3
+      font-size 3.6rem
+      margin-top 76px
+      padding-bottom 25px
+      &:after
+        width 620px
+        left calc(50% - 310px)
+    h4
+      font-size 2.8rem
+      margin 25px 0 60px
+    p
+      margin 50px 0 30px
+      font-size 1.8rem
+    span
+      font-size 1.6rem
+      line-height 20px
+  .swiper-container
+    width 1016px
+  .swiper-slide
+    width 240px
+@media screen and (max-width: 750px)
+  .banner
+    width 100%
+    min-width 375px
+    height 150px
+    div.text
+      top 29px
+      width 185px
+      height 80px
+      left 50px
+      margin 0
+      &:after
+        height 2px
+        top 41px
+      h3
+        font-size 1.2rem
+        right 0
+      p
+        font-size 1rem
+        width 100%
+    div.img
+      img
+        &:first-child
+          top -60px
+          width 75px
+          right -74%
+          height 110px
+        &:last-child
+          width 80px
+          height 110px
+          top -60px
+          right -50%
+  .banner.load
+    div
+      &:after
+        width 22px
+    h3
+      top 20px
+      &:first-child
+        top 0
+    p
+      right 0
+      top 52px
+      &:last-child
+        top 64px
+  .safe-body
+    width 280px
+    h3
+      font-size 1.6rem
+      margin-top 45px
+      padding-bottom 5px
+      &:after
+        height 1px
+        width 180px
+        left calc(50% - 90px)
+    h4
+      font-size 1.6rem
+      margin-top 5px
+      margin-bottom 30px
+    p
+      margin 30px 0 10px
+      font-size 1.4rem
+    span
+      font-size 1rem
+  .swiper-container
+    width 280px
+  .swiper-slide
+    width 120px
+    img
+      width 120px
+      height 38px

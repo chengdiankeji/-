@@ -1,0 +1,81 @@
+{{extend '../../resource/layout/layout.art'}}
+{{block 'meta'}}{{/block}}
+{{block 'title'}}安全服务-技术服务支持-承点科技,提供专业的、稳定的平台技术{{/block}}
+{{block 'content'}}
+<section class="banner" id="banner">
+    <div class="text">
+        <h3>智能检测&nbsp;&nbsp;立体安全防护</h3>
+        <h3>等保测评&nbsp;&nbsp;企业安全合规</h3>
+        <p>严格执行检测标准</p>
+        <p>Strict execution of testing</p>
+    </div>
+    <div class="img">
+        <img src="../../resource/imgs/safe/safe-start-2.png">
+        <img src="../../resource/imgs/safe/safe-start-1.png">
+    </div>
+</section>
+<section class="fixed">
+    <div>
+        <a href="https://www.71chat.com/scsf/core/styleConfig.visitorView.do?cmpcd=142185" target="view_window">
+            <i class="iconfont icon-kefu"></i>
+            咨询
+        </a>
+    </div>
+    <div class="code">
+        <a href="">
+            <i class="iconfont icon-saoyisaoerweimasaomasaomiao"></i>
+            <img src="../../resource/imgs/index/code.png">
+            关注
+        </a>
+    </div>
+    <div>
+        <a href="#banner" class="A-up">
+            <img src="../../resource/imgs/index/index-up.png">
+            返回
+        </a>
+    </div>
+</section>
+<section class="safe-body">
+    <h3>service content</h3>
+    <h4>服务内容</h4>
+    <p>信息安全等级保护</p>
+    <span>信息安全等级保护是企业重要系统依据《信息系统安全等级保护基本要求》进行的一项重要的合规工作，我司提供定级备案咨询、安全建设和整改、信息安全等级测评全流程服务。</span>
+    <p>安全评估</p>
+    <span>安全评估（Security Evaluation) 是通过模拟黑客攻击的行为，发现系统中存在的安全漏洞，定制安全评估报告。企业依据安全评估报告中描述的漏洞清单及安全加固方案进行修复。</span>
+    <p>Web应用防火墙</p>
+    <span>可以对网站或者APP的业务流量进行恶意特征识别及防护，将正常、安全的流量回源到服务器。避免网站服务器被恶意入侵，保障业务的核心数据安全，解决因恶意攻击导致的服务器性能异常问题。</span>
+    <p>堡垒机</p>
+    <span>主要包括账号管理、认证管理、权限管理、审计管理、自动化运维等功能，解决系统账号复用、运维权限混乱、运维过程不透明等IT运维难题。</span>
+    <p>数据库加密系统</p>
+    <span>主要包括账号管理、认证管理、权限管理、审计管理、自动化运维等功能，解决系统账号复用、运维权限混乱、运维过程不透明等IT运维难题。</span>
+    <h3>Service advantage</h3>
+    <h4>服务优势</h4>
+    <span>一对一顾问式服务，保证高效率服务；按项目制实施相应的安全服务，保证服务质量；安全专家均来自百度、新浪等大型互联网公司，安全领域工作至少10年以上，经验丰富。</span>
+    <h3>FIRM advantage</h3>
+    <h4>企业优势</h4>
+    <span>承点科技信息安全部员工，多数来自于百度、新浪、浪潮等国内知名企业，安全服务人员均有十年以上的安全从业经验；丰富的人才储备，拥有CISSP、CISP、等各项人才；拥有六个安全领域的专业技术团队，具备为大规模安全规划建设项目和安全服务项目提供一站式服务。</span>
+    <h3>Success case</h3>
+    <h4>成功案例</h4>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="../../resource/imgs/safe/safe-1.png"></div>
+            <div class="swiper-slide"><img src="../../resource/imgs/safe/safe-2.png"></div>
+            <div class="swiper-slide"><img src="../../resource/imgs/safe/safe-3.png"></div>
+            <div class="swiper-slide"><img src="../../resource/imgs/safe/safe-4.png"></div>
+            <div class="swiper-slide"><img src="../../resource/imgs/safe/safe-5.png"></div>
+            <div class="swiper-slide"><img src="../../resource/imgs/safe/safe-6.png"></div>
+            <div class="swiper-slide"><img src="../../resource/imgs/safe/safe-7.png"></div>
+            <div class="swiper-slide"><img src="../../resource/imgs/safe/safe-8.png"></div>
+            <div class="swiper-slide"><img src="../../resource/imgs/safe/safe-9.png"></div>
+            <div class="swiper-slide"><img src="../../resource/imgs/safe/safe-10.png"></div>
+            <div class="swiper-slide"><img src="../../resource/imgs/safe/safe-11.png"></div>
+            <div class="swiper-slide"><img src="../../resource/imgs/safe/safe-12.png"></div>
+            <div class="swiper-slide"><img src="../../resource/imgs/safe/safe-13.png"></div>
+            <div class="swiper-slide"><img src="../../resource/imgs/safe/safe-14.png"></div>
+            <div class="swiper-slide"><img src="../../resource/imgs/safe/safe-15.png"></div>
+            <div class="swiper-slide"><img src="../../resource/imgs/safe/safe-16.png"></div>
+        </div>
+    </div>
+</section>
+<script type="text/javascript" src="https://www.71chat.com/scsf/core/styleConfig.initChat.do?cmpcd=142185"></script>
+{{/block}}

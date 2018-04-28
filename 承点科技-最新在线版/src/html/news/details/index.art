@@ -1,0 +1,29 @@
+{{extend '../../../resource/layout/layout.art'}}
+{{block 'meta'}}{{/block}}
+{{block 'title'}}{{/block}}
+{{block 'content'}}
+<section class="new-title">
+    <h4>News and information</h4>
+    <h3>新闻资讯</h3>
+    <a href="/news#news">承点新闻</a>
+    <a href="/news#information">行业资讯</a>
+    <a href="/news#share">干货分享</a>
+</section>
+<section class="new-body">
+    <div>
+        <a href="../../index">首页</a>
+        <span>></span>
+        <a href="../../news">新闻资讯</a>
+        <span>></span>
+        <a href="../../news">承点新闻</a>
+    </div>
+    <div>
+        <h5 id="title">承点科技开启“革新 致远”新征程</h5>
+        <div id="newsDetails"></div>
+    </div>
+    <div>
+        <div id="A_up"></div>
+        <div id="A_down"></div>
+    </div>
+</section>
+{{/block}}

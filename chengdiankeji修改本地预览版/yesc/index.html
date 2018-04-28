@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no">
+    <title>婴幼市场最好卖的究竟是什么</title>
+    <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 0;
+        }
+        body {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        .content, .shade-content {
+            width: 290px;
+            margin: 0 auto;
+        }
+        .content > h1 {
+            font-size: 14px;
+            text-align: center;
+            font-weight: normal;
+            padding: 15px 0 25px;
+        }
+        .content > p {
+            font-size: 12px;
+            padding: 0 10px 35px;
+        }
+        .btn-box > div {
+            font-size: 12px;
+            margin: 0 20px 20px;
+            padding-left: 25px;
+            border: 1px solid #aaaaaa;
+            border-radius: 5px;
+            line-height: 23px;
+        }
+        button {
+            display: block;
+            font-size: 16px;
+            margin: 0 auto;
+            padding: 2px 15px;
+            border: none;
+            line-height: 20px;
+            background-color: #878787;
+            border-radius: 3px;
+            color: white;
+        }
+        button.active {
+            background-color: #ff0000;
+        }
+        .shade {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: white;
+            display: none;
+        }
+        .shade-content {
+            border: 1px solid #b8b8b8;
+            margin-top: 15px;
+            position: relative;
+        }
+        .shade-content:before {
+            content: '';
+            position: absolute;
+            width: 82%;
+            height: 108%;
+            top: -4%;
+            left: 9%;
+            background-color: white;
+        }
+        .shade-content:after {
+            content: '';
+            position: absolute;
+            width: 108%;
+            height: 82%;
+            top: 9%;
+            left: -4%;
+            background-color: white;
+            z-index: 1;
+        }
+        .shade-content > h2 {
+            font-size: 12px;
+            text-align: center;
+            padding: 8px 0 10px;
+            margin: 0 30px;
+            border-bottom: 1px solid #d5d5d5;
+            position: relative;
+            z-index: 10;
+        }
+        .shade-content > h2 > span {
+            font-size: 20px;
+            color: #15ad88;
+            padding: 0 15px;
+        }
+        .shade-content > p {
+            font-size: 12px;
+            height: 144px;
+            padding: 20px 15px 10px;
+            line-height: 18px;
+            text-align: justify;
+            position: relative;
+            z-index: 10;
+        }
+        .shade-content > div {
+            height: 60px;
+            position: relative;
+            z-index: 11;
+            text-align: center;
+            margin-top: 45px;
+        }
+        .shade-content > div > a {
+            font-size: 16px;
+            font-weight: bold;
+            background-color: #ff0000;
+            border-radius: 3px;
+            display: inline-block;
+            color: #fff;
+            padding: 2px 15px;
+            text-decoration: none;
+        }
+        .shade-content > div > p {
+            font-size: 12px;
+            text-align: center;
+            color: #ff0000;
+			margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <img src="images/banner.jpg" alt="三生三世十里桃花">
+    <div class="content">
+        <h1>请先耐心回答以下几个问题</h1>
+        <p class="question">1/您认为消费者在购买婴幼用品的过程中，最关注？</p>
+        <div class="btn-box">
+            <div class="btn btn-one">价格</div>
+            <div class="btn btn-two">质量</div>
+            <div class="btn btn-three">品牌</div>
+        </div>
+        <button disabled="disabled" class="find-result">揭晓答案</button>
+    </div>
+    <div class="shade">
+        <img src="images/揭晓答案.png" alt="白浅" class="result-image">
+        <div class="shade-content">
+            <h2>如果你愿意，你将是最好的</h2>
+            <p class="result-content">营销的问题其实就是渠道和媒介的问题，对于企业来讲要想成功的实现品牌推广，除了高品质的产品外，优质的的传播媒介和多层次的销售渠道，才是营销环节的重中之重，通过精准的媒介把品牌信息推送到目标消费者，让目标消费者通过有效的渠道购买到产品，这是成为一个优秀品牌最快最有效的方法。<br>这个世界上没有卖不出去的产品，只有不会卖产品的人。只要你的品牌有价值，做对推广，找对渠道，你就会成为卖的最好的。</p>
+            <div>
+                <a href="http://www.chengdiankeji.com/send/send.html">聊聊</a>
+                <p>免费领取价值12800元的网络营销诊断方案</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var questionArray = [
+            ['1/您认为消费者在购买婴幼用品的过程中，最关注？', '价格', '质量', '品牌'],
+            ['2/作为消费者您的月收入是多少？', '2000-4000', '4000-6000', '6000-8000+'],
+            ['3/你会优先选择以下哪种方式购买婴幼用品？', '实体', '网购', '海外代购'],
+            ['4/作为消费者您每个月给孩子的支出预计？', '200-500', '500-1000', '1000-2000'],
+            ['5/您会经常购买品牌的婴幼用品吗？', '会', '不会'],
+            ['6/消费者了解品牌的主要途径?', '朋友介绍', '媒体广告', '导购直推'],
+            ['7/您认为婴幼市场应该提高哪方面的规范度？', '产品质量', '宣传渠道', '售后服务']
+        ],
+            resultArray = [
+                ['营销的问题其实就是渠道和媒介的问题，对于企业来讲要想成功的实现品牌推广，除了高品质的产品外，优质的的传播媒介和多层次的销售渠道，才是营销环节的重中之重，通过精准的媒介把品牌信息推送到目标消费者，让目标消费者通过有效的渠道购买到产品，这是成为一个优秀品牌最快最有效的方法。<br>这个世界上没有卖不出去的产品，只有不会卖产品的人。只要你的品牌有价值，做对推广，找对渠道，你就会成为卖的最好的。']
+            ],
+            index = 0,
+            type = '';
+
+        $('.btn-box').on('click', '.btn', function(){
+
+            for(var i in questionArray){
+                if(questionArray[i][0] == $('.question').html()) {
+                    index = i;
+                }
+            }
+
+            switch (parseInt(index)) {
+                case 0:
+                    if (this.className == 'btn btn-one') {
+                        setContent(1);
+                    } else if (this.className == 'btn btn-two'){
+                        setContent(2);
+                    } else {
+                        setContent(2);
+                    }
+                    break;
+                case 1:
+                    if (this.className == 'btn btn-one') {
+                        setContent(3);
+                    } else if (this.className == 'btn btn-two'){
+                        setContent(4);
+                    } else {
+                        setContent(4);
+                    }
+                    break;
+                case 2:
+                    if (this.className == 'btn btn-one') {
+                        setContent(3);
+                    } else if (this.className == 'btn btn-two'){
+                        setContent(1);
+                    } else {
+                        setContent(3);
+                    }
+                    break;
+                case 3:
+                    if (this.className == 'btn btn-one') {
+                        setContent(5);
+                    } else if (this.className == 'btn btn-two'){
+                        setContent(4);
+                    } else {
+                        setContent(4);
+                    }
+                    break;
+                case 4:
+                    setContent(5);
+                    break;
+                case 5:
+                    setContent(6);
+                    break;
+                case 6:
+                    type = 'A';
+                    clearBind();
+                    break;
+            }
+        });
+
+        $('.content').on('click', '.find-result', function(){
+            switch (type) {
+                case 'A':
+                    setResult(0);
+                    break;
+            }
+
+            $('.shade').unbind().css('display', 'block');
+        });
+
+        function setContent(i) {
+            $('.question').html(questionArray[i][0]);
+            var html = '';
+            html += "<div class='btn btn-one'>"+questionArray[i][1]+"</div>";
+            html += "<div class='btn btn-two'>"+questionArray[i][2]+"</div>";
+
+            if (questionArray[i].length == 4) {
+                html += "<div class='btn btn-three'>"+questionArray[i][3]+"</div>";
+            }
+
+            $('.btn-box').html(html);
+        }
+
+        function clearBind() {
+            $('.find-result').unbind().addClass('active').removeAttr('disabled');
+            $('.btn-box').unbind();
+        }
+
+        function setResult(i) {
+            $('.result-image').attr('src', 'images/揭晓答案.png');
+            $('.result-content').html(resultArray[i][0]);
+        }
+    </script>
+</body>
+</html>

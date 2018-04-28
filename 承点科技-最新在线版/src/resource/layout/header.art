@@ -1,0 +1,23 @@
+<nav class="global-header">
+    <a href="">
+        <img src="../../resource/imgs/index/logo.png">
+    </a>
+    <input type="checkbox" name="type" value="导航" id="nav">
+    <label for="nav">
+        <img src="../../resource/imgs/news/crumbs.png" id="nav-img">
+        <div></div>
+    </label>
+    <ul>
+        <li><a href="/">首页</a></li>
+        <li><a href="/brand">品牌营销</a></li>
+        <li><a href="/develop">开发定制</a></li>
+        <li><a href="/serve">运营服务</a></li>
+        <li><a href="/safe">安全服务</a></li>
+        <li><a href="/cooperate">渠道合作</a></li>
+        <li><a href="/news">新闻资讯</a></li>
+        <li><a href="/#slide6">联系我们</a></li>
+    </ul>
+    <div>
+        <i class="iconfont icon-dianhua"></i>
+        <span>010-86201877</span></div>
+</nav>

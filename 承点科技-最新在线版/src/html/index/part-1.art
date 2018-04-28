@@ -1,0 +1,36 @@
+<div class="swiper-container swiper-container-h">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide h-bg-1">
+			<div class="verticalcenter h-1-border">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<div class="h-1-dashed"></div>
+			</div>
+			<div class="verticalcenter clear">
+				<div class="left">
+					<span>1</span>
+				</div>
+				<div class="right">
+					<h3>站式全案服务</h3>
+					<h4>SERVICE</h4>
+					<p>差异性解决方案抢占行业商机</p>
+					<p class="small-title">基于Python、Java、Html5等程序语言实现高级架构方案</p>
+				    <h5>基于Python、Java、Html5实现高级架构方案</h5>
+				</div>
+			</div>
+		</div>
+		<div class="swiper-slide h-bg-2">
+			<div class="h-2-content">
+				<h3>专业高效的运营团队</h3>
+				<h4>Professional team</h4>
+				<p>依据客户现状&nbsp;&nbsp;&nbsp;&nbsp;制定优质方案</p>
+				<p>基于数据反馈&nbsp;&nbsp;&nbsp;&nbsp;打造热度营销</p>
+			</div>
+		</div>
+	</div>
+	<div class="down-arrow"></div>
+	<div class="swiper-button-next"></div>
+	<div class="swiper-button-prev"></div>
+</div>
