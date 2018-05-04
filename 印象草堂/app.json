@@ -1,0 +1,43 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "Pages/man/man",
+    "Pages/woman/woman",
+    "Pages/story/story",
+    "Pages/shop/shop"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ffe2c4",
+    "navigationBarTitleText": "印象草堂",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color":"#ddd",
+    "list": [{
+      "pagePath": "Pages/man/man",
+      "text": "男包",
+      "iconPath": "images/footer-icon-04.png",
+      "selectedIconPath": "images/footer-icon-04-active.png"
+    },
+    {
+      "pagePath": "Pages/woman/woman",
+      "text": "女包",
+      "iconPath": "images/footer-icon-04.png",
+      "selectedIconPath": "images/footer-icon-04-active.png"
+    },
+    {
+      "pagePath": "Pages/story/story",
+      "text": "品牌故事",
+      "iconPath": "images/footer-icon-04.png",
+      "selectedIconPath": "images/footer-icon-04-active.png"
+    },
+    {
+      "pagePath": "Pages/shop/shop",
+      "text": "实体店铺",
+      "iconPath": "images/footer-icon-04.png",
+      "selectedIconPath": "images/footer-icon-04-active.png"
+    }]
+  }
+}

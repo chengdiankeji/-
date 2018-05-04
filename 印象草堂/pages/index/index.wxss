@@ -1,0 +1,34 @@
+/**index.wxss**/
+.body{
+  margin-top:12rpx;
+}
+.hot-shop{
+  border-left:4rpx solid #ffe2c4;
+  font-size:30rpx;
+  padding-left:2%;
+  margin-left:2%;
+}
+.shop{
+   display:flex; 
+   flex-wrap: wrap;
+   padding-left:2%;
+   padding-right:2%;
+}
+.section_gap{
+  width:50%;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.section_gap image{
+  width:100%;
+  height:100%;
+}
+.section__ctn{
+  width:100%;
+  height:354rpx;
+}
+.shop-name{
+  font-size:24rpx;
+  color:#cc7b46;
+}

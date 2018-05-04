@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view>
+  <view class="banner">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="150" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="body">
+    <text class="hot-shop">热门商品</text>
+    <view class="shop">
+      <view class="section section_gap" wx:for="{{shopImgs}}" wx:for-item="item" wx:key="id">
+        <view class="section__ctn">
+          <image src="{{item.url}}" mode="scaleToFill"></image>
+        </view>
+        <text class="shop-name">{{item.shopName}}</text>
+      </view>
+  </view>
+  </view>
+</view>
