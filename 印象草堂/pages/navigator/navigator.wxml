@@ -2,11 +2,17 @@
 
 <text>{{shopId}}</text>
 
-<view class="section section_gap" wx:for="shopId" wx:for-item="item">
+
+<view class="section section_gap" wx:for="{{details.id1}}" wx:for-item="item" wx:if="{{shopId==1}}">
       <view class="section__ctn">
       <text>{{item.id}}</text>
-        <image style="width: 100%;" src="{{item.url}}"></image>
+        <image style="width: 100%;" src="{{item.url}}"/>
       </view>
     </view>
-
+<view class="section section_gap" wx:for="{{details.id2}}" wx:for-item="item" wx:if="{{shopId==2}}">
+      <view class="section__ctn">
+      <text>{{item.id}}</text>
+        <image style="width: 100%;" src="{{item.url}}"/>
+      </view>
+    </view>
 

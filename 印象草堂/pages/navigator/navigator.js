@@ -13,9 +13,9 @@ Page({
         { url: "https://i1.bvimg.com/644713/331e882c449e29ce.jpg"}
       ],
       id2: [
-        { url: "https://i1.bvimg.com/644713/331e882c449e29ce.jpg"},
-        { url: "https://i1.bvimg.com/644713/331e882c449e29ce.jpg"},
-        { url: "https://i1.bvimg.com/644713/331e882c449e29ce.jpg"}
+        { url: "http://i1.bvimg.com/644713/2f9ade1c3315f4c6.jpg"},
+        { url: "http://i1.bvimg.com/644713/2f9ade1c3315f4c6.jpg"},
+        { url: "http://i1.bvimg.com/644713/2f9ade1c3315f4c6.jpg"}
       ],
       id3: [
         { url: "https://i1.bvimg.com/644713/331e882c449e29ce.jpg"},
@@ -36,7 +36,7 @@ Page({
   onLoad: function (options) {
     // console.log(options.id);
     this.setData({
-      shopId: "details.id"+options.id
+      shopId: options.id
     });
   },
 
@@ -52,7 +52,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    console.log(typeof(this.data.shopId));
+    
   },
 
   /**
