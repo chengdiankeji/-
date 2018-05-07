@@ -1,11 +1,9 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs",
-    "Pages/man/man",
-    "Pages/woman/woman",
-    "Pages/story/story",
-    "Pages/shop/shop"
+    "pages/story/story",
+    "pages/shop/shop",
+    "pages/navigator/navigator"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -16,25 +14,19 @@
   "tabBar": {
     "color":"#ddd",
     "list": [{
-      "pagePath": "Pages/man/man",
-      "text": "男包",
+      "pagePath": "pages/index/index",
+      "text": "首页",
       "iconPath": "images/footer-icon-04.png",
       "selectedIconPath": "images/footer-icon-04-active.png"
     },
     {
-      "pagePath": "Pages/woman/woman",
-      "text": "女包",
-      "iconPath": "images/footer-icon-04.png",
-      "selectedIconPath": "images/footer-icon-04-active.png"
-    },
-    {
-      "pagePath": "Pages/story/story",
+      "pagePath": "pages/story/story",
       "text": "品牌故事",
       "iconPath": "images/footer-icon-04.png",
       "selectedIconPath": "images/footer-icon-04-active.png"
     },
     {
-      "pagePath": "Pages/shop/shop",
+      "pagePath": "pages/shop/shop",
       "text": "实体店铺",
       "iconPath": "images/footer-icon-04.png",
       "selectedIconPath": "images/footer-icon-04-active.png"

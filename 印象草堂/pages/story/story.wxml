@@ -1,2 +1,4 @@
 <!--Pages/story/story.wxml-->
-<text>Pages/story/story.wxml</text>
+<view style="height:800px;">
+  <image src="https://i4.bvimg.com/644713/00323b285cb7c8bf.jpg" mode='aspectFill' style="width:100%;height:100%;"/>
+</view>

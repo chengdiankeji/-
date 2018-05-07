@@ -1,2 +1,11 @@
 <!--Pages/shop/shop.wxml-->
-<text>Pages/shop/shop.wxml</text>
+<view>
+  <swiper  class="swiper2" indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" vertical="{{vertical}}" atyle="width:100%;">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image"/>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

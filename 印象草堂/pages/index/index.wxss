@@ -32,3 +32,7 @@
   font-size:24rpx;
   color:#cc7b46;
 }
+.banner-swiper{
+  width:100%;
+  height:400rpx;
+}

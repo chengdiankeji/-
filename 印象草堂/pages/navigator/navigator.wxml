@@ -1,0 +1,12 @@
+<!--pages/navigator/navigator.wxml-->
+
+<text>{{shopId}}</text>
+
+<view class="section section_gap" wx:for="shopId" wx:for-item="item">
+      <view class="section__ctn">
+      <text>{{item.id}}</text>
+        <image style="width: 100%;" src="{{item.url}}"></image>
+      </view>
+    </view>
+
+

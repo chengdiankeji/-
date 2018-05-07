@@ -48,5 +48,5 @@ Page({
     this.setData({
       duration: e.detail.value
     })
-  }
+  },
 })
