@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="format-detection" content="telephone=no" />
     <title>三河市艾士诺建材有限公司|合作客户</title>
@@ -135,7 +136,7 @@
                 </div>
             </div>
         </div>
-        <div class="content-right col-lg-9">
+        <div class="content-right col-lg-9" style="background:white;">
             <div class="content-right-center">
                 <div class="content-right-top-center content-right-center-center">
                     <h1>联系方式 </h1>
@@ -148,15 +149,15 @@
                             联系地址：河北省廊坊市三河市齐心庄镇
                            </p> 
                         </div>
-                        <div class="contact-us-map container">
-                            <div id="allmap">
-
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
             <div style="clear:both;"> </div>
+            <div class="contact-us-map container" style="padding-bottom:4rem;width:80%;">
+                            <div id="allmap" style="border:1px solid black;">
+
+                            </div>
+                        </div>
         </div>
     </section>
     <footer>
@@ -187,14 +188,12 @@
     <script src="../bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript">
         var map = new BMap.Map("allmap");
-        map.enableScrollWheelZoom(true);  
-        var point = new BMap.Point(116.950789, 39.991445);
-        marker = new BMap.Marker(new BMap.Point(116.950789, 39.991445));  // 创建标注
-         //跳动的动画
-         map.addOverlay(marker);
-        map.centerAndZoom(point, 11);
-	                   // 将标注添加到地图中
-        marker.setAnimation(BMAP_ANIMATION_BOUNCE);
+	var point = new BMap.Point(116.950,39.991);
+	map.centerAndZoom(point, 11);
+	var marker = new BMap.Marker(point);  // 创建标注
+	map.addOverlay(marker);               // 将标注添加到地图中
+	marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
+    map.enableScrollWheelZoom(true);   
     </script>
 </body>
 
